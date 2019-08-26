@@ -1,0 +1,31 @@
+.input-material-group{
+  position: relative;
+  .form-placeholder{
+    color: $input-placeholder-color;
+    position: absolute;
+    top: 50%;
+    left: $input-padding-x;
+    transform: translateY(-50%);
+    transition: transform .15s cubic-bezier(0.4,0,0.2,1);
+    pointer-events: none;
+    transform-origin: left center;
+    letter-spacing: .1px;
+    z-index: 3;
+    @extend .text-truncate;
+  }
+  .form-control{
+    &:last-child, &:first-child{
+      border-radius: $input-border-radius;
+    }
+    &:focus, &:valid, &[disabled], &.disabled{
+      ~ .form-placeholder{
+        transform: scale(.74) translateY(-($input-padding-y * 8));
+        padding: 2px 4px;
+        background-color: #fff;
+        border-radius: 2px;
+
+      }
+    }
+  }
+}
+

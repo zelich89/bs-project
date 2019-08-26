@@ -1,0 +1,65 @@
+.drop-under-content{
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.drop-box{
+  padding: $input-padding-y;
+  background-color: #fff;
+  border: $input-border-width solid $input-border-color;
+  border-radius: $input-border-radius;
+  display: none;
+  &.active:not(.show-animate){
+    display: block;
+  }
+  &.show-animate{
+    transition: transform .1s ease;
+    transform: scaleY(0);
+    transform-origin: top center;
+    display: block;
+    > *{
+      opacity: 0;
+    }
+  }
+
+  &.active.show-animate{
+    transform: scaleY(1);
+    transition: transform .15s ease;
+    > *{
+      transition: opacity .15s .15s ease;
+      opacity: 1;
+    }
+  }
+}
+.drop-header{
+  margin-bottom: 10px;
+}
+.drop-list{
+  -webkit-overflow-scrolling: touch;
+  user-select: none;
+  &.drop-scroll{
+    max-height: 200px;
+    overflow-y: auto;
+  }
+  .item{
+    padding: $input-padding-y $input-padding-x;
+    font-size: $font-size-sm;
+    border-radius: $input-border-radius;
+    transition: background-color .2s ease;
+    color: $input-placeholder-color;
+    cursor: pointer;
+    display: block;
+    &.active,  &:hover{
+      background-color: rgba($input-placeholder-color, .1);
+      color: #000;
+    }
+    &.disabled{
+      opacity: .5;
+      cursor: not-allowed;
+      &:hover{
+        color: currentColor;
+      }
+    }
+  }
+}
