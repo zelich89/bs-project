@@ -1,3 +1,9 @@
+$animation-show-speed: .15s;
+$animation-hide-speed: .1s;
+$animation-opacity-duration: $animation-show-speed;
+$animation-item-hover-speed: .2s;
+$animation-easing: ease;
+
 .drop-under-content{
   position: absolute;
   left: 0;
@@ -14,9 +20,9 @@
     display: block;
   }
   &.show-animate{
-    transition: transform .1s ease;
+    transition: transform $animation-hide-speed $animation-easing;
     transform: scaleY(0);
-    transform-origin: top center;
+    transform-origin: left center;
     display: block;
     > *{
       opacity: 0;
@@ -25,16 +31,20 @@
 
   &.active.show-animate{
     transform: scaleY(1);
-    transition: transform .15s ease;
+    transition: transform $animation-show-speed $animation-easing;
     > *{
-      transition: opacity .15s .15s ease;
+      transition: opacity $animation-show-speed $animation-opacity-duration $animation-easing;
       opacity: 1;
     }
   }
 }
+
 .drop-header{
-  margin-bottom: 10px;
+  padding: $input-padding-y $input-padding-x;
+  font-size: $font-size-base;
+  font-weight: $font-weight-bold;
 }
+
 .drop-list{
   -webkit-overflow-scrolling: touch;
   user-select: none;
@@ -46,13 +56,16 @@
     padding: $input-padding-y $input-padding-x;
     font-size: $font-size-sm;
     border-radius: $input-border-radius;
-    transition: background-color .2s ease;
+    transition: background-color $animation-item-hover-speed $animation-easing;
     color: $input-placeholder-color;
     cursor: pointer;
     display: block;
     &.active,  &:hover{
       background-color: rgba($input-placeholder-color, .1);
       color: #000;
+    }
+    &:active:not(.active){
+      background-color: rgba($input-placeholder-color, .2);
     }
     &.disabled{
       opacity: .5;

@@ -6,12 +6,18 @@
     top: 50%;
     left: $input-padding-x;
     transform: translateY(-50%);
-    transition: transform .15s cubic-bezier(0.4,0,0.2,1);
+    transition: transform .15s ease-in-out, top .15s ease-in-out, color .15s ease-in-out;
     pointer-events: none;
-    transform-origin: left center;
+    transform-origin: left top;
     letter-spacing: .1px;
+    background-color: $input-bg;
+    border: 1px solid transparent;
     z-index: 3;
     @extend .text-truncate;
+    &:empty{
+      display: none;
+    }
+
   }
   .form-control{
     &:last-child, &:first-child{
@@ -19,11 +25,13 @@
     }
     &:focus, &:valid, &[disabled], &.disabled{
       ~ .form-placeholder{
-        transform: scale(.74) translateY(-($input-padding-y * 8));
-        padding: 2px 4px;
-        background-color: #fff;
-        border-radius: 2px;
-
+        transform: scale(.75);
+        top: -12px;
+        padding: 0 8px;
+        margin-left: -8px;
+        background-color: $input-bg;
+        color: $input-color;
+        font-weight: bold;
       }
     }
   }
