@@ -1,4 +1,175 @@
-body{
-  background-color: plum;
+.h-s {
+  height: 75px;
 }
 
+.br {
+  border: 1px solid;
+}
+
+.br-m2 {
+  border: 2px solid;
+}
+
+.bgg {
+  background-color: rgba( 0, 255, 0, .2);
+}
+
+.dot {
+  background-color: gold;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+}
+
+/*#############################################################---------------------STANDART------------------------###################################################################*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:active {
+  color: #000;
+}
+
+a:hover {
+  color: #000;
+}
+
+a:visited {
+  color: #000;
+}
+
+img {
+  vertical-align: top;
+}
+
+
+/*#####################################################################################################################################################################################*/
+/*#####################################################################################################################################################################################*/
+/*#####################################################################################################################################################################################*/
+
+.soc-sprite {
+  background-image: url(https://i.imgur.com/2UNaOHF.png);
+  background-repeat: no-repeat;
+  display: block;
+}
+
+.soc-sprite-1-facebook {
+  width: 10px;
+  height: 22px;
+  background-position: -5px -5px;
+}
+
+.soc-sprite-2-twitter {
+  width: 26px;
+  height: 21px;
+  background-position: -25px -5px;
+}
+
+.soc-sprite-3-linkedin {
+  width: 24px;
+  height: 23px;
+  background-position: -61px -5px;
+}
+
+.soc-sprite-4-google {
+  width: 19px;
+  height: 19px;
+  background-position: -95px -5px;
+}
+
+/*#####################################################################################################################################################################################*/
+/*#####################################################################################################################################################################################*/
+/*#####################################################################################################################################################################################*/
+
+.dev-width {
+  max-width: 1500px;
+}
+
+.header-block {
+  margin: 0 auto;
+  display: flex;
+  &__main-block {
+    width: 70%;
+    display: flex;
+    &--bg {
+      background-color: #e9eae2;
+    }
+  }
+  &__nav-block {
+    width: 30%;
+    &--bg {
+      background-color: #7acec3;
+    }
+  }
+}
+
+.logo-block{
+  &--position {
+    padding-left: 170px;
+  }
+  &__pic {
+    &--position{
+      margin-top: 50px;
+    }
+  }
+  &__text {
+    font: 18px/1.5 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+    &--position {
+      margin-top: 5px;
+    }
+  }
+  &__social {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    &--position {
+      margin-top: 55px;
+      margin-bottom: 100px;
+    }
+  }
+}
+
+.block-main {
+  &__pic {
+    &--position {
+      margin-top: 30px;
+      margin-left: 100px;
+    }
+  }
+}
+
+.block-menu {
+  position: relative;
+  &__text {
+    font: 14px/1.5 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+    &--position {
+      padding-top: 230px;
+      padding-left: 60px;
+      padding-right: 290px;
+    }
+  }
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 1px;
+    top: 50%;
+    left: -120px;
+    right: -120px;
+    background-color: #fff;
+    transform: rotate(-49deg);
+  } 
+}
