@@ -155,13 +155,14 @@ img {
   &__text {
     font: 14px/1.5 'Roboto Condensed', sans-serif;
     text-transform: uppercase;
+    color: white;
     &--position {
       padding-top: 230px;
       padding-left: 60px;
       padding-right: 290px;
     }
   }
-  &:before {
+  &:after {
     content: '';
     display: block;
     position: absolute;
@@ -171,5 +172,29 @@ img {
     right: -120px;
     background-color: #fff;
     transform: rotate(-49deg);
-  } 
+  }
+  &__burger {
+    position: absolute;
+    &--position {
+      top: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+}
+
+.text-menu{
+  &__first{
+    &--position {
+      padding-top: 230px;
+      padding-left: 60px;
+      padding-right: 290px;
+    }
+  }
+  &__second{
+    &--position {
+      padding-top: 30px;
+      padding-left: 140px;
+    }
+  }
 }
