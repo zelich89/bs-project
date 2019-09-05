@@ -175,6 +175,7 @@ img {
   }
   &__burger {
     position: absolute;
+    cursor: pointer;
     &--position {
       top: 30px;
       left: 50%;
