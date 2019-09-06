@@ -10,6 +10,10 @@
   border: 2px solid;
 }
 
+.h-1267 {
+  height: 1267px;
+}
+
 .bgg {
   background-color: rgba( 0, 255, 0, .2);
 }
@@ -19,6 +23,10 @@
   border-radius: 50%;
   width: 10px;
   height: 10px;
+}
+
+.dn {
+  display: none;
 }
 
 /*#############################################################---------------------STANDART------------------------###################################################################*/
@@ -199,3 +207,136 @@ img {
     }
   }
 }
+
+.project-block {
+  margin: 0 auto;
+  &--display {
+    display: flex;
+  }
+}
+.left-side--size {
+  width: 70%;
+}
+
+.right-side--size {
+  width: 30%;
+}
+
+.sect-one {
+  display: flex;
+  &__label {
+    position: relative;
+    &--bg {
+      background-color: #ebb240;
+    }
+    &--size {
+      width: 465px;
+      height: 500px;
+    }
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      height: 1px;
+      top: 50%;
+      left: -120px;
+      right: -120px;
+      background-color: #fff;
+      transform: rotate(-47.1deg);
+    }
+  }
+  &__item {
+    &--size {
+      width: 584px;
+      height: 500px;
+      border: 1px solid red;
+    }
+    &--bg {
+      background: url("https://i.imgur.com/DjgV9tv.jpg");
+      background-repeat: no-repeat;
+      background-position-x: right;
+    }
+    &--position {
+      padding-left: 110px;
+    }
+  }
+}
+
+.label-sect {
+  display: flex;
+  &__arrow {
+    &--position {
+      padding-top: 175px;
+      padding-left: 100px;
+      padding-right: 10px;
+    }
+  }
+  &__list {
+    &--position {
+      padding-top: 175px;
+    }
+  }
+  &__name {
+    font: 48px/1.5 'Roboto Condensed', sans-serif;
+    color: white;
+    text-transform: uppercase;
+    &--position {
+      padding-top: 300px;
+    }
+  }
+}
+
+.item-sect {
+  &__name {
+    &--size {
+      font: 24px/1.5 'Roboto Condensed', sans-serif;
+    }
+    &--position {
+      margin-top: 90px;
+    }
+  }
+  &__list {
+    &--size {
+      font: 300 12px/1.5 'Roboto Condensed', sans-serif;
+      text-transform: uppercase;
+    }
+    &--regular {
+      font-weight: 600;
+    }
+    &--position {
+      padding-top: 20px;
+    }
+  }
+  &__link {
+    & img {
+      vertical-align: baseline;
+    }
+    &--size {
+    font: 300 18px/1.5 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+    }
+    &--position {
+      padding-top: 60px;
+    }
+  }
+  &__like {
+    &--setting {
+      display: inline-flex;
+      align-items: center;
+      flex-direction: column;
+    }
+    &--size {
+      font: 11px 'Roboto Condensed', sans-serif;
+    }
+    &--color {
+      color: red;
+    }
+    &--position {
+      margin-top: 80px;
+      margin-left: 50px;
+    }
+  }
+}
+
+
+
