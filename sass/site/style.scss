@@ -257,8 +257,8 @@ img {
     &--abs {
       position: absolute;
     }
-    &--pointer{
-      cursor: pointer;
+    &--z-index{
+      z-index: 1;
     }
     &--position {
       top: 30px;
