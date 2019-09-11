@@ -242,6 +242,7 @@ img {
     }
   }
   &__svg{
+    pointer-events: none;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -250,7 +251,7 @@ img {
     fill: #fff;
     & line{
       stroke: #fff;
-      stroke-width: 1;
+      stroke-width: 1.2;
     }
   }
   &__burger {
@@ -342,28 +343,48 @@ img {
       padding-right: 10px;
     }
   }
-  &__list-item {
-    display: flex;
-    align-items: center;
-    padding: 8px 20px;
-    overflow: hidden;
-  }
-  &__list-item a {
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    color: ghostwhite;
-  }
-  &__list-item a:before {
-    content: ' ';
-    display: block;
-    width: 19px;
-    height: 15px;
-    background: url(https://i.imgur.com/20CkwLJ.png) no-repeat center center;
-    margin-right: 10px;
-    transform: translateX(-100%);
-    opacity: 0;
-    transition: transform .2s ease, opacity .2s ease;
+  &__list {
+    &--z-index {
+      z-index: 1;
+    }
+    ul {
+      list-style-type: none;
+      li {
+        a {
+          display: flex;
+          padding: 1px 20px;
+          padding-left: 0;
+          &:before {
+            content: '';
+            width: 19px;
+            height: 15px;
+            background: url(https://i.imgur.com/20CkwLJ.png) no-repeat center center;
+            text-decoration: none;
+            margin-right: 10px;
+            opacity: 0;
+            transform: translateX(-100%);
+            transition: opacity .2s ease, transform .2s ease;
+          }
+          &.active:before, &:hover:before {
+            opacity: 1;
+            transform: translateX(0);
+          }
+        }
+      }
+    }
+    &--color a {
+      color: white;
+      &.active {
+        color: black;
+      }
+      &:hover {
+        color: black;
+      }
+    }
+    &--position {
+      padding-top: 160px;
+      padding-left: 80px;
+    }
   }
   &__name {
     &--size {
@@ -377,6 +398,7 @@ img {
     }
   }
   &__svg{
+    pointer-events: none;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -669,7 +691,7 @@ img {
 .section-three-right {
   &__name {
     &--size {
-      font: 24px/1.5 'Roboto Condensed', sans-serif;
+      @include font(24px, 1.5, 400);
       text-transform: uppercase;
     }
     &--position {
@@ -931,24 +953,56 @@ img {
     }
     &--position {
       padding-top: 60px;
-      padding-left: 90px;
+      padding-left: 77px;
     }
   }
   &__list{
     &--size {
-      @include font(12px, 1.5, 400);
+      @include font(12px, 1.3, 400);
+    }
+    &--z-index {
+      z-index: 1;
+    }
+    ul {
+      list-style-type: none;
+      li {
+        a {
+          display: flex;
+          padding: 1px 20px;
+          padding-left: 0;
+          &:before {
+            content: '';
+            width: 19px;
+            height: 15px;
+            background: url(https://i.imgur.com/20CkwLJ.png) no-repeat center center;
+            text-decoration: none;
+            margin-right: 10px;
+            opacity: 0;
+            transform: translateX(-100%);
+            transition: opacity .2s ease, transform .2s ease;
+          }
+          &.active:before, &:hover:before {
+            opacity: 1;
+            transform: translateX(0);
+          }
+        }
+      }
+    }
+    &--color a {
+      color: white;
     }
     &--color a{
       color: white;
     }
     &--position {
-      padding-left: 90px;
+      padding-left: 50px;
     }
     & img {
       margin-left: -23px;
     }
   }
   &__svg{
+    pointer-events: none;
     width: 60%;
     height: 100%;
     position: absolute;
@@ -1017,6 +1071,7 @@ img {
     padding-left: 200px;
   }
   &__svg{
+    pointer-events: none;
     width: 100%;
     height: 100%;
     position: absolute;
@@ -1233,6 +1288,7 @@ img {
       color: white;
     }
     &__svg{
+      pointer-events: none;
       width: 100%;
       height: 100%;
       position: absolute;
@@ -1361,7 +1417,7 @@ img {
       @include font(12px, 1.3, 400);
       text-transform: uppercase;
     }
-    &--color {
+    &--color  {
       color: #fd5000;
     }
     &--position {
@@ -1406,7 +1462,7 @@ img {
       align-items: center;
     }
     &--size {
-      font: 12px/1.3 'Roboto Condensed', sans-serif;
+      @include font(12px, 1.3, 400);
     }
     &--position {
       padding-top: 60px;
