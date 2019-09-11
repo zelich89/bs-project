@@ -1,0 +1,18 @@
+.xy-center,
+.y-center,
+.x-center{
+  display: flex;
+}
+
+.xy-center{
+  @extend .y-center;
+  @extend .x-center;
+}
+
+.y-center{
+  align-items: center;
+}
+
+.x-center{
+  justify-content: center;
+}
