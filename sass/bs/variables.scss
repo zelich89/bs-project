@@ -1,5 +1,30 @@
 // Your variable overrides
-$body-bg: black;
-$body-color: blue;
+//$body-bg: black;
+//$body-color: green;
+
+$grid-columns:                24 !default;
+$grid-gutter-width:           30px !default;
+
+$spacer: 2px;
+$spacers: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$spacers: map-merge(
+                (
+                        0: 0,
+                        2: $spacer,
+                        4: ($spacer * 2),
+                        6: ($spacer * 2),
+                        8: ($spacer * 4),
+                        10: ($spacer * 5),
+                        12: ($spacer * 6),
+                        14: ($spacer * 7),
+                        16: ($spacer * 8),
+                        18: ($spacer * 9),
+                        20: ($spacer * 10)
+                ),
+                $spacers
+);
+
+
 
 @import "../../node_modules/bootstrap/scss/bootstrap";
