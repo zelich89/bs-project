@@ -1,0 +1,10 @@
+.h1 {
+  font: bold 32px/1.5 Montserrat;
+  @include media-breakpoint-up(md) {
+    font: bold 36px/1.3 Montserrat;
+  }
+  @include media-breakpoint-up(xl) {
+    font: bold 64px/1.2 Montserrat;
+  }
+}
+

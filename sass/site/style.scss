@@ -1,5 +1,44 @@
-body{
-
+.my--navbar .navbar-nav .nav-link {
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 1px;
+  color: #ffffff;
 }
 
-//<link rel="shortcut icon" href="http://www.iconj.com/ico/q/r/qro93523zz.ico" type="image/x-icon" />
+.bg--dark {
+  background-color: #4b4b4b;
+}
+
+.my--navbar {
+  padding-top: 33px;
+  padding-bottom: 33px;
+}
+
+.HOFMANN {
+  font-size: 36px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 2px;
+  color: #ebcb80;
+}
+
+.my--btn {
+  width: 180px;
+  height: 48px;
+  border-radius: 50px;
+  border: solid 2px #ffffff;
+  font-size: 16px;
+  letter-spacing: 0.8px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.my--btn:hover {
+    background-color: #ebcb80;
+    border-color: #ebcb80;
+}
