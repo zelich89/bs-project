@@ -1,0 +1,22 @@
+.x-center,
+.y-center,
+.xy-center {
+  display: flex;
+}
+
+.x-center {
+  align-items: center;
+}
+
+.y-center {
+  justify-content: center;
+}
+
+.xy-center {
+  align-items: center;
+  justify-content: center;
+}
+
+.marg-cent {
+  margin: 0 auto;
+}
