@@ -1,0 +1,124 @@
+
+.h1 {
+  font: bold 64px/1.5 Montserrat;
+}
+
+.h2 {
+  font: bold 32px/1.5 Montserrat;
+  @include media-breakpoint-up(md) {
+    font: bold 36px/1.4 Montserrat;
+  }
+  @include media-breakpoint-up(xl) {
+    font: bold 44px/1.3 Montserrat;
+  }
+}
+
+.h3 {
+  font: bold 32px/1.5 Montserrat;
+}
+
+.h4 {
+  font: bold 18px/1.5 Montserrat;
+}
+
+.h5 {
+  font: 18px/1.5 Montserrat;
+}
+
+.caption-1 {
+  font: bold 24px/1.5 "Source Sans Pro";
+  text-transform: uppercase;
+}
+
+.caption-2 {
+  font: bold 18px/1.5 "Source Sans Pro";
+  text-transform: uppercase;
+}
+
+.caption-3 {
+  font: bold 18px/1.5 "Source Sans Pro";
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.caption-4 {
+  font: bold 16px/1.5 "Source Sans Pro";
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.caption-5 {
+  font: bold 13px/1.5 "Source Sans Pro";
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.text-size-0001 {
+  font: 400 16px/1.5 "Source Sans Pro";
+  text-transform: initial;
+  width: 250px;
+}
+
+.text-size-1 {
+  font: 400 16px/1.5 "Source Sans Pro";
+  text-transform: initial;
+}
+
+.text-size-2 {
+  font: 300 16px/1.5 "Source Sans Pro";
+  text-transform: initial;
+}
+
+.text-size-3 {
+  font: 11px/1 "Source Sans Pro";
+}
+
+.italic {
+  font-style: italic;
+}
+
+.btn-price-text-size {
+  font: 300 16px/1.5 "Source Sans Pro";
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.price {
+  font: 300 64px/1 Montserrat;
+}
+
+.hofman {
+  font: bold 36px/1.4 Montserrat;
+  letter-spacing: 2px;
+  color: $primary;
+}
+
+//Montserrat ----------------------------------------------------------------------------------------------------
+
+.color-primary {
+  & a {
+    color: $primary;
+  }
+}
+
+.color-dark {
+  color: $dark;
+}
+
+.color-darker {
+  color: $darker;
+}
+
+.color-lighter {
+  color: $lighter;
+  & a {
+    color: $lighter;
+  }
+}
+
+.color-white {
+  color: white;
+  & a {
+    color: white;
+  }
+}
