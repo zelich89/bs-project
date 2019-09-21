@@ -1,3 +1,11 @@
+@mixin input-placeholder {
+  &.placeholder { @content; }
+  &:-moz-placeholder { @content; }
+  &::-moz-placeholder { @content; }
+  &:-ms-input-placeholder { @content; }
+  &::-webkit-input-placeholder { @content; }
+}
+
 .dott {
   width: 30px;
   height: 30px;
@@ -64,6 +72,13 @@
 //######################################################################################################################################################
 //######################################################################################################################################################
 //######################################################################################################################################################
+* {
+  outline: none !important;
+}
+
+$height: 36px;
+$line-height: 20px;
+$border-width: 1px;
 
 body {
   background-color: #fff;
@@ -96,6 +111,17 @@ a {
 
 .p-map {
   padding: 20px 25px;
+}
+
+.logo {
+  font: bold 36px/44px Montserrat;
+  letter-spacing: 2px;
+}
+
+#my-navber {
+  .nav-link {
+    padding: 24px;
+  }
 }
 
 /* ##################################################################### BACKGROUND @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
@@ -216,7 +242,6 @@ a {
   bottom: 0;
   left: 0;
 }
-
 .cards {
   width: 360px;
   height: 400px;
@@ -231,13 +256,31 @@ a {
 
 .my-btn {
   @extend .btn;
-  border: 3px solid;
+  border: 2px solid;
   border-radius: 50px;
   padding: 10px 35px;
 }
 
+.my-outliner {
+  border-color: inherit;
+}
+
 //#################################################################################
 .btn-price {
+  cursor: pointer;
+  border-radius: 50px;
+  padding: 10px 40px;
+  z-index: 2;
+}
+
+.btn-price {
+  cursor: pointer;
+  border-radius: 50px;
+  padding: 10px 40px;
+  z-index: 2;
+}
+
+.contact-price {
   cursor: pointer;
   border-radius: 50px;
   padding: 10px 40px;
@@ -251,8 +294,11 @@ a {
     width: 170px;
     border: 4px solid;
     border-color: $primary;
-    border-radius: 50%;
   }
+}
+
+.roundedd {
+  border-radius: 50%;
 }
 
 .dot {
@@ -262,7 +308,7 @@ a {
   border-radius: 50%;
   background-color: #fff;
   border: 2px solid $darker;
-  &:active {
+  &.active {
     background-color: $darker;
   }
 }
@@ -295,8 +341,6 @@ a {
 }
 
 .cont-in {
-  width: 536px;
-  height: 414px;
   border: 1px solid #e6e6e6;
 }
 
@@ -358,4 +402,61 @@ a {
     margin-right: 20px;
     margin-bottom: 10px;
   }
+}
+
+.cont-name {
+  display: inline-block;
+}
+
+.input-theme {
+  border: $border-width solid #999999;
+  border-radius: 4px;
+}
+
+.input {
+  background-color: #fff;
+  box-shadow: none;
+  font: 14px/#{$line-height} "Source Sans Pro";
+  resize: none;
+  outline: none;
+}
+
+.input-text {
+  height: $height;
+  padding: ($height - $line-height - ($border-width *2))/2 11px;
+  width: 100%;
+}
+
+.content-item {
+  width: 50%;
+  float: left;
+}
+
+.form-group .content-item {
+  margin-bottom: 16px;
+  &:not(:first-child) {
+    padding-left: 6px;
+  }
+  &:first-child {
+    padding-right: 6px;
+  }
+}
+
+.input-textarea {
+  height: 120px;
+  width: 100%;
+  padding: ($height - $line-height - ($border-width *2))/2 11px;
+}
+
+.label {
+  display: block;
+  font: 18px/28px"Source Sans Pro";
+}
+
+.form .label {
+  margin-bottom: 10px;
+}
+
+.form .input-textarea {
+  margin-bottom: 20px;
 }

@@ -11,35 +11,32 @@
 <body>
 <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700&display=swap&subset=cyrillic" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700&display=swap" rel="stylesheet">
-<section class="header bg-darker">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-light ">
-                <a class="hofman " href="#">HOFMANN</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <div class="menu-part y-center ml-auto">
-                        <ul class="navbar-nav mr-auto caption-2 color-lighter pt-xl-5">
-                            <li class="nav-item">
-                                <a class="nav-link disabled menu-p1" href="#" tabindex="-1" aria-disabled="true">Mission</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link disabled menu-p1" href="#" tabindex="-1" aria-disabled="true">SERVICES</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link disabled menu-p1" href="#" tabindex="-1" aria-disabled="true">About</a>
-                            </li>
-                        </ul>
-                        <button class="my-btn btn-outline-light caption-2 my-2 my-sm-0" type="submit">take a tour
+<header class="header bg-darker py-35">
+    <div class="container">
+        <nav id="my-navber"  class="navbar navbar-expand-lg ">
+            <a class="navbar-brand logo" href="#">HOFMANN</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-                        </button>
-                    </div>
-                </div>
-            </nav>
-        </div>
-    </section>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto caption-2 color-lighter">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">MISSION </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">SERVICES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">ABOUT</a>
+                    </li>
+                </ul>
+                <button class="my-btn my-outliner caption-2 color-lighter my-2 my-sm-0" type="submit">TAKE A TOUR</button>
+            </div>
+        </nav>
+    </div>
+</header>
 
 <!--    2  -->
 
@@ -173,10 +170,10 @@
 <section class="d-n user">
     <div class="container d-flex justify-content-around pb-xl-50">
         <div class="left xy-center">
-            <img src="https://www.placehold.it/64" alt="">
+            <img class="roundedd" src="https://www.placehold.it/64" alt="">
         </div>
         <div class="user-content x-center flex-column mt-xl-100">
-            <img src="https://www.placehold.it/175" alt="">
+            <img class="rounded" src="https://www.placehold.it/175" alt="">
             <div class="user-name h4 mt-xl-30">Ida Stephens — Noir Project<br><br>
             <span class="user-text-size text-size-1">“Conversations can be a tricky business. Sometimes, decoding what is said with what is meant is difficult at best. However, communication is a necessary tool in todays world. It’s often been the case were one party completely miscommunicates to another due to a misunderstanding between parties.”</span></div>
             <div class="dots d-flex mt-xl-50">
@@ -188,7 +185,7 @@
             </div>
         </div>
         <div class="right xy-center">
-            <img src="https://www.placehold.it/64" alt="">
+            <img class="roundedd" src="https://www.placehold.it/64" alt="">
         </div>
     </div>
 </section>
@@ -236,7 +233,7 @@
             <a href="#" class="places-item">BLICKVIEW</a>
             <a href="#" class="places-item">NEW RAVEN</a>
         </nav>
-        <div class="places-pic col-11 d-flex flex-wrap justify-content-around">
+        <div class="places-pic col-11 d-flex flex-wrap justify-content-around pb-xl-75">
             <img src="http://www.placehold.it/300" alt="">
             <img src="http://www.placehold.it/300" alt="">
             <img src="http://www.placehold.it/300" alt="">
@@ -250,9 +247,9 @@
 
 <!--    8  -->
 <section class="d-n create bg-acc">
-    <div class="container text-align-center br">
-        <h2 class="h2 color-lighter mt-xl-50">Create An Account</h2>
-        <div class="cards bg-darker g-grad-light pos-rel mx-auto mt-xl-30 mb-xl-50">
+    <div class="container text-align-center py-xl-50">
+        <h2 class="h2 color-lighter ">Create An Account</h2>
+        <div class="cards bg-darker g-grad-light pos-rel mx-auto mt-xl-30 ">
             <div class="plan-it-name caption-3 color-primary pt-xl-40">SIGN UP</div>
             <form method="post" action="#" id="login">
 
@@ -275,7 +272,7 @@
     <div class="container h-650">
         <div class="h2 text-center mt-xl-25 mb-xl-65">Contact Us</div>
         <div class="contact-section d-flex justify-content-around">
-            <div class="s-1">
+            <div class="sect-1">
                 <h4 class="get h4">Get In Touch</h4>
                 <div class="address string x-start" >
                     <img src="https://www.placehold.it/10x15" alt="">
@@ -290,12 +287,31 @@
                     <div class="text-size-1 pl-xl-10">793-891-7938<br>512-915-5628<br>952-775-6021</div>
                 </div>
             </div>
-            <div class="cont-in x-center">
+
+
+            <div class="cont-in col-7 px-xl-60 py-xl-40">
+                    <div class="form-div-group">
+                        <form class="form-group" action="">
+                            <div class="content-item">
+                                <label class="label h5" for="name-form">Name:</label>
+                                <input class="input input-text input-theme placeholder-color text-size-4" id="name-form" type="text" placeholder="Letha Terry">
+                            </div>
+
+                            <div class="content-item">
+                                <label class="label h5" for="some-id-2">Email:</label>
+                                <input class="input input-text input-theme placeholder-color text-size-4" id="mail-form" type="text" placeholder="letha.terry@ya">
+                            </div>
+                            <label class="label h5" for="some-id-3">Message:</label>
+                            <textarea class="input input-textarea input-theme" id="message-form"></textarea>
+                            <a href="#" class="btn btn-price bg-primary color-darker btn-price-text-size mt-xl-30">FIND MORE</a>
+                        </form>
+                    </div>
             </div>
+
+
             <div class="s-3 ml-xl-40">
                 <h4 class="get h4">Credits</h4>
                 <div class="string text-size-1">In order to discuss the general function of the logo, we must firstly identify and define the environment where this will have to fulfill its function.A</div>
-
                 <h4 class="get h4 mt-xl-30">Follow</h4>
                 <div class="loop d-flex flex-wrap">
                     <a href="#"><img src="https://www.placehold.it/24" alt=""></a>
