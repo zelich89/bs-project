@@ -100,10 +100,6 @@ a {
   position: absolute;
 }
 
-.text-align-center {
-  text-align: center;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -230,8 +226,14 @@ a {
 .descr-item {
   width: 351px;
 }
+
 .plan-it {
   width: 360px;
+  height: 400px;
+  border-radius: 8px;
+}
+
+.plan-it2 {
   height: 400px;
   border-radius: 8px;
 }
@@ -334,9 +336,15 @@ a {
 }
 
 .f-input {
-  margin-bottom: 25px;
+  margin-bottom: 15px;
+  @include media-breakpoint-up(xl) {
+    margin-bottom: 25px;
+  }
   &:first-child {
-    margin-top: 25px;
+    margin-top: 15px;
+    @include media-breakpoint-up(xl) {
+      margin-top: 25px;
+    }
   }
 }
 
@@ -376,6 +384,13 @@ a {
     transform: scaleX(.5);
   }
 }
+
+.clearfix:after {
+  display: block;
+  clear: both;
+  content: ""
+}
+
 .foot-text-width {
   width: 133px;
 }
