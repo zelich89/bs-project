@@ -99,6 +99,9 @@
 .text-size-1 {
   font: 400 11px/1.5 "Source Sans Pro";
   text-transform: initial;
+  @include media-breakpoint-up(md) {
+    font: 14px/1.5 "Source Sans Pro";
+  }
   @include media-breakpoint-up(xl) {
     font: 16px/1.5 "Source Sans Pro";
   }
