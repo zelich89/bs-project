@@ -1,4 +1,4 @@
-@for $i from 0 through 250 {
+@for $i from 0 through 245 {
   @if ($i%5 == 0) {
     .mt-#{$i} {
       margin-top: #{$i}px !important;
