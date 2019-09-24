@@ -1,4 +1,4 @@
-@for $i from 0 through 245 {
+@for $i from 0 through 246 {
   @if ($i%5 == 0) {
     .mt-#{$i} {
       margin-top: #{$i}px !important;
@@ -53,8 +53,8 @@
     }
   }
 }
-@for $i from 0 through 250 {
-  @if ($i%5 == 0) {
+@for $m from 0 through 250 {
+  @if ($m%5 == 0) {
     @include media-breakpoint-up(md) {
 
       .mt-md-#{$m} {
