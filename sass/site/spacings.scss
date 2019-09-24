@@ -53,9 +53,8 @@
     }
   }
 }
-
-@for $m from 0 through 250 {
-  @if ($m%5 == 0) {
+@for $i from 0 through 250 {
+  @if ($i%5 == 0) {
     @include media-breakpoint-up(md) {
 
       .mt-md-#{$m} {
