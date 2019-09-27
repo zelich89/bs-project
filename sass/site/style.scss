@@ -1,4 +1,16 @@
-$round-size: 80px;
+$round-size: 50px;
+@include media-breakpoint-up(xl) {
+  $round-size: 64px;
+}@include media-breakpoint-up(xl) {
+   $round-size: 80px;
+ }
+
+  $adv-size-w: 50px;
+  $adv-size-h: 46px;
+@include media-breakpoint-up(xl) {
+   $adv-size-w: 64px;
+   $adv-size-h: 58px;
+ }
 
 @mixin input-placeholder {
   &.placeholder { @content; }
@@ -262,6 +274,16 @@ a {
 .round svg{
   width: $round-size/2;
   height: $round-size/2;
+}
+
+.adv-icon {
+  width: $adv-size-w;
+  height: $adv-size-h;
+}
+
+.adv-icon svg{
+  width: $adv-size-w/2;
+  height: $adv-size-h/2;
 }
 
 .descr-item {
