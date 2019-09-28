@@ -1,0 +1,59 @@
+.bg-gr {
+  background-color: green;
+}
+
+.bg-red {
+  background-color: red;
+}
+
+.bg-primary {
+  background-color: $primary;
+}
+
+.bg-dark {
+  background-color: $dark;
+}
+
+.bg-darker {
+  background-color: $darker;
+}
+
+.bg-danger {
+  background-color: $danger;
+}
+
+.bg-pics {
+  background: url("https://i.imgur.com/emkvsMB.jpg") no-repeat top center/cover;
+}
+
+.bg-acc {
+  background: url("https://i.imgur.com/piEmTVU.jpg") no-repeat top center/cover;
+}
+
+.bg-map {
+  background: url("https://i.imgur.com/Cgxf5Rw.png") no-repeat top center/cover;
+}
+
+.bg-grad-light:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 8px;
+  z-index: 0;
+  background: linear-gradient(45deg, rgba(0,0,0,0) 0%,rgba(255,255,255,.15) 100%);
+}
+
+.bg-grad-dark:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 8px;
+  z-index: 0;
+  background: linear-gradient(45deg, rgba(0,0,0, .4) 0%,rgba(0,0,0,0) 100%)
+}
