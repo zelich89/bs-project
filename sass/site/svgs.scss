@@ -1,0 +1,84 @@
+.round {
+  width: $round-size-sm;
+  height: $round-size-sm;
+  svg {
+    width: $round-size-sm/2;
+    height: $round-size-sm/2;
+  }
+  @include media-breakpoint-up(md) {
+    width: $round-size-md;
+    height: $round-size-md;
+    svg {
+      width: $round-size-md/2;
+      height: $round-size-md/2;
+    }
+  }
+  @include media-breakpoint-up(xl) {
+    width: $round-size-xl;
+    height: $round-size-xl;
+    svg {
+      width: $round-size-xl/2;
+      height: $round-size-xl/2;
+    }
+  }
+}
+
+
+
+.adv-icon {
+  width: $adv-size-sm-w*2;
+  height: $adv-size-sm-h*2;
+  svg {
+    width: $adv-size-sm-w;
+    height: $adv-size-sm-h;
+  }
+
+  @include media-breakpoint-up(xl) {
+    width: $adv-size-xl-w*2;
+    height: $adv-size-xl-h*2;
+    svg {
+      width: $adv-size-xl-w;
+      height: $adv-size-xl-h;
+    }
+  }
+}
+
+
+
+.soc-icon {
+  width: $soc-icon-sm*2;
+  height: $soc-icon-sm*2;
+  svg {
+    width: $soc-icon-sm;
+    height: $soc-icon-sm;
+  }
+
+  @include media-breakpoint-up(xl) {
+    width: $soc-icon-xl*2;
+    height: $soc-icon-xl*2;
+    svg {
+      width: $soc-icon-xl;
+      height: $soc-icon-xl;
+    }
+  }
+}
+
+.direction-icon {
+  width: $direction;
+  height: $direction;
+  svg {
+    width: $direction/2;
+    height: $direction/2;
+  }
+}
+
+.go-to-top-h {
+  width: $go-to-top-h;
+  height: $go-to-top-h;
+  svg {
+    width: $direction/2;
+    height: $direction/2;
+  }
+}
+
+$go-to-top-h

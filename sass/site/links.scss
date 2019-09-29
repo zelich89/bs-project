@@ -1,29 +1,42 @@
-.color-primary {
-  a {
-    color: $primary;
+.link-color-primary {
+    color: $primary !important;
+  &:hover{
+    color: darken($primary, 20%) !important;
+  }
+  &:focus, &:active, &:visited {
+
   }
 }
 
-.color-dark {
-  a {
-    color: $dark;
+.link-color-dark {
+    color: $dark !important;
+  &:focus, &:active, &:visited {color: inherit}
+  &:hover{
+    color: darken($dark, 20%) !important;
   }
 }
 
-.color-darker {
-  a {
-    color: $darker;
+.link-color-darker {
+    color: $darker !important;
+  &:hover{
+    color: darken($darker, 20%) !important;
   }
 }
 
-.color-lighter {
-  a {
-    color: $lighter;
+.link-color-lighter {
+    color: $lighter !important;
+  &:hover{
+    color: darken($lighter, 20%) !important;
   }
 }
 
-.color-white {
-  a {
-    color: white;
+.link-color-white {
+    color: white !important;
+}
+
+.link-color-success {
+    color: $success !important;
+  &:hover{
+    color: darken($success, 20%) !important;
   }
 }

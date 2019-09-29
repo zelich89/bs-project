@@ -5,33 +5,6 @@
   }
 }
 
-$round-size: 80px;
-/*$round-size: 50px;
-@include media-breakpoint-up(md) {
-  $round-size: 64px;
-}
-
-@include media-breakpoint-up(xl) {
-  $round-size: 80px;
-}*/
-
-
-$adv-size-w: 60px;
-$adv-size-h: 64px;
-
-$soc-icon: 14px;
-@include media-breakpoint-up(xl) {
-  $soc-icon: 25px;
-}
-
-/*$adv-size-w: 46px;
-$adv-size-h: 50px;
-@include media-breakpoint-up(xl) {
-  $adv-size-w: 60px;
-  $adv-size-h: 64px;
-}*/
-//}
-
 @mixin input-placeholder {
   &.placeholder {
     @content;
@@ -97,12 +70,11 @@ body {
 }
 
 a {
+  color: #3de13d;
   text-decoration: none;
-
   &:hover {
     text-decoration: none;
   }
-;
 }
 
 .pos-rel {
@@ -183,38 +155,6 @@ a {
   }
 }
 
-.round {
-  width: $round-size;
-  height: $round-size;
-  border-radius: 50%;
-  background-color: $darker;
-}
-
-.round svg {
-  width: $round-size/2;
-  height: $round-size/2;
-}
-
-.adv-icon {
-  width: $adv-size-w*2;
-  height: $adv-size-h*2;
-}
-
-.adv-icon svg {
-  width: $adv-size-w;
-  height: $adv-size-h;
-}
-
-.soc-icon {
-  width: $soc-icon*2;
-  height: $soc-icon*2;
-}
-
-.soc-icon svg {
-  width: $soc-icon;
-  height: $soc-icon;
-}
-
 .descr-item {
   width: 351px;
 }
@@ -232,6 +172,7 @@ a {
 
 .cards {
   border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.5);
 }
 
 .cards-text {
@@ -251,14 +192,17 @@ a {
 
 .my-btn {
   @extend .btn;
-  border: 2px solid;
   border-radius: 50px;
-  padding: 10px 35px;
 }
 
-.my-outliner {
-  border-color: inherit;
+.my-btn-outline {
+  padding: 15px 40px;
 }
+
+.my-btn-border {
+  border: 2px solid;
+}
+
 
 //#######################################################-----------------------PLACES-----------------------------------##################################################
 .content {
@@ -302,8 +246,7 @@ a {
   display: block;
 }
 
-.btn-price {
-  border-radius: 50px;
+.main-btn-size {
   padding: 10px 25px;
   z-index: 2;
   @include media-breakpoint-up(md) {
