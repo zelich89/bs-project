@@ -1,4 +1,4 @@
-.link-color-primary {
+.link-text-primary {
     color: $primary !important;
   &:hover{
     color: darken($primary, 20%) !important;
@@ -8,7 +8,7 @@
   }
 }
 
-.link-color-dark {
+.link-text-dark {
     color: $dark !important;
   &:focus, &:active, &:visited {color: inherit}
   &:hover{
@@ -16,25 +16,28 @@
   }
 }
 
-.link-color-darker {
+.link-text-darker {
     color: $darker !important;
   &:hover{
     color: darken($darker, 20%) !important;
   }
 }
 
-.link-color-lighter {
+.link-text-lighter {
     color: $lighter !important;
   &:hover{
     color: darken($lighter, 20%) !important;
   }
 }
 
-.link-color-white {
+.link-text-white {
     color: white !important;
+  &:hover{
+    color: white !important;
+  }
 }
 
-.link-color-success {
+.link-text-success {
     color: $success !important;
   &:hover{
     color: darken($success, 20%) !important;
