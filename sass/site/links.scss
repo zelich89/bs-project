@@ -12,7 +12,8 @@
     color: $dark !important;
   &:focus, &:active, &:visited {color: inherit}
   &:hover{
-    color: darken($dark, 20%) !important;
+    color: lighten($dark, 20%) !important;
+    //color: darken($dark, 20%) !important;
   }
 }
 

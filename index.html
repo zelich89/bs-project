@@ -160,10 +160,11 @@ document.write("<script async src='/browser-sync/browser-sync-client.js?v=2.26.7
     <div class="container">
         <nav id="my-navber" class="navbar navbar-expand-lg ">
             <a class="navbar-brand logo link-text-primary" href="#">ZOFMANN</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            <div class="burger d-lg-none">
+                <div class="burger-bar"></div>
+                <div class="burger-bar"></div>
+                <div class="burger-bar burger-half"></div>
+            </div>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto caption-2">
                     <li class="nav-item active">
@@ -187,48 +188,49 @@ document.write("<script async src='/browser-sync/browser-sync-client.js?v=2.26.7
 <section class="d-n main bg-pics">
     <div class="container y-center flex-column pt-70 pb-100 pt-md-135 pb-md-150 pt-xl-250 pb-xl-200">
         <div class="row x-center">
-            <div class="col-12 text-center mb-xl-35">
-                <div class="main-text h2 text-darker text-center">Choosing The Right Boutique Hotel For Youu</div>
+            <div class="col-8 col-md-6 text-center mb-20">
+                <div class="main-text h1 text-darker text-center text-nowrap">Choosing The Right Boutique Hotel For You</div>
             </div>
         </div>
         <div class="row x-center">
-            <div class="col-12 text-center mb-xl-35">
+            <div class="col-12 text-center mb-20 mb-xl-35">
                 <div class="not-main text-size-1 text-darker">How To Fly A Private Jet On Your Next Trip</div>
             </div>
         </div>
         <div class="row x-center">
             <div class="col-12 x-center">
-            <form class="form-inline my-2 mb-xl-25">
-                <input class="form-control mr-sm-2 w-100 w-md-auto"  type="search" placeholder="Search" aria-label="Search">
-                <button class="my-btn main-btn-size btn-outline my-btn-border text-darker w-100 w-md-auto ml-0 ml-md-10 ml-xl-20" type="submit">FIND NOW</button>
-            </form>
-        </div>
-        </div>
-        <div class="row x-center">
-            <div class="col-5 x-center">
-                <div class="round-links d-flex justify-content-between link-text-white">
-                    <div class="round rounded-circle bg-darker xy-center mx-10 mx-md-35 mx-xl-30">
-                        <a class="text-white" href="#">
-                            <svg>
-                                <use xlink:href="#icon-2-plane"/>
-                            </svg>
-                        </a>
-                    </div>
+                <form class="form-inline mb-40 mb-md-50 mb-xl-60">
+                    <input class="form-control mr-sm-2 w-100 w-md-auto"  type="search" placeholder="Search" aria-label="Search">
+                    <button class="my-btn main-btn-size btn-outline my-btn-border text-darker w-100 w-md-auto mt-15 ml-0 mt-md-0 ml-md-10 ml-xl-20" type="submit">FIND NOW</button>
+                </form>
+            </div>
+            </div>
+            <div class="row">
+                <div class="col-10 x-center justify-content-between">
                     <a href="#" class="link-text-white">
-                        <div class="round rounded-circle bg-darker xy-center mx-10 mx-md-35 mx-xl-30">
+                        <div class="round-links d-flex ">
+                            <div class="round rounded-circle bg-darker xy-center mx-5 mx-md-35 mx-xl-30">
                                 <svg>
-                                    <use xlink:href="#icon-2-wallet"/>
+                                    <use xlink:href="#icon-2-plane"/>
                                 </svg>
+                            </div>
+                    </a>
+                    <a href="#" class="link-text-white">
+                        <div class="round rounded-circle bg-darker xy-center mx-5 mx-md-35 mx-xl-30">
+                            <svg>
+                                <use xlink:href="#icon-2-wallet"/>
+                            </svg>
                         </div>
                     </a>
                     <a href="#" class="link-text-white">
-                        <div class="round rounded-circle bg-darker xy-center mx-10 mx-md-35 mx-xl-30">
+                        <div class="round rounded-circle bg-darker xy-center mx-5 mx-md-35 mx-xl-30">
                             <svg>
                                 <use xlink:href="#icon-2-case"/>
                             </svg>
                         </div>
                     </a>
                 </div>
+            </div>
             </div>
         </div>
     </div>
@@ -290,7 +292,7 @@ document.write("<script async src='/browser-sync/browser-sync-client.js?v=2.26.7
                     <div class="cont-descr text-size-1">Search Engine Optimization And Advertising</div>
                 </div>
             </div>
-            <div class="media col-10 col-lg-4 pb-35 pb-md-50 pb-xl-75">
+            <div class="media col-10 col-lg-4 pb-0 pb-md-50 pb-xl-75">
                 <img class="media-img mr-20 mr-md-15" src="https://i.imgur.com/GyGWRUy.png" alt="">
                 <div class="media-body">
                     <h3 class="name caption-2">Johnny Vargas</h3>
@@ -306,7 +308,7 @@ document.write("<script async src='/browser-sync/browser-sync-client.js?v=2.26.7
 
 <section class="d-n plan bg-darker">
     <div class="container text-center">
-        <h2 class="h2 text-lighter `pt-45 pt-md-50 pt-xl-55`">Choose Your Plan</h2>
+        <h2 class="h2 text-lighter pt-45 pt-md-50 pt-xl-55`">Choose Your Plan</h2>
         <div class="plans-sect row flex-md-row justify-content-around pt-30 pb-40 pt-md-35 pb-md-70 pt-xl-50 pb-xl-100">
             <div class="col-11 col-md-6 col-xl-4 mb-25">
                 <div class="cards cards-up cards-1 bg-darker bg-grad-light text-white pos-rel pt-30 px-35 pt-xl-40 px-xl-50">
@@ -327,7 +329,7 @@ document.write("<script async src='/browser-sync/browser-sync-client.js?v=2.26.7
                     <div class="cards-name caption-2 pos-rel z-i-1 mb-20 mb-xl-30">GOLD</div>
                     <div class="prises x-center pos-rel z-i-1 ьи-5 mb-md-10 mb-xl-15">
                         <div class="h5">$</div>
-                        <div class="price">399</div>
+                        <div class="price">98</div>
                     </div>
                     <div class="long caption-2 pos-rel z-i-1 mb-51 mb-ml-20 mb-xl-30">YEAR</div>
                     <div class="plan-descr text-size-1 pos-rel z-i-1 mb-20 mb-ml-15 mb-xl-30">Team Account<br>500 GB
@@ -341,7 +343,7 @@ document.write("<script async src='/browser-sync/browser-sync-client.js?v=2.26.7
                     <div class="cards-name caption-2 text-primary pos-rel z-i-1 mb-20 mb-xl-30">PLATINUM</div>
                     <div class="prises x-center pos-rel z-i-1 ьи-5 mb-md-10 mb-xl-15">
                         <div class="h5">$</div>
-                        <div class="price">399</div>
+                        <div class="price">299</div>
                     </div>
                     <div class="long caption-2 pos-rel z-i-1 mb-51 mb-ml-20 mb-xl-30">YEAR</div>
                     <div class="plan-descr text-size-1 pos-rel z-i-1 mb-20 mb-ml-15 mb-xl-30">Team Account<br>500 GB
@@ -457,11 +459,11 @@ document.write("<script async src='/browser-sync/browser-sync-client.js?v=2.26.7
                 <div class="col-11 ">
                     <div class="place-menu d-flex caption-5">
                         <div class="primary">
-                            <div class="place-item bold mb-25 mb-md-0">
+                            <div class="place-item bold mb-25 mb-lg-0">
                                 SAN FRANCISCO
                             </div>
                         </div>
-                        <div class="d-none d-md-flex">
+                        <div class="d-none d-lg-flex mb-25">
                             <div class="place-item">
                                 SOUTH LILIANA
                             </div>
@@ -518,13 +520,13 @@ document.write("<script async src='/browser-sync/browser-sync-client.js?v=2.26.7
     <div class="container text-center z-i-1 pos-rel">
         <h2 class="h2 text-lighter pt-45 pt-md-50 pt-xl-55">Create An Account</h2>
         <div class="create-sect row flex-md-row justify-content-around pt-30 pb-40 pt-md-35 pb-md-70 pt-xl-50 pb-xl-10">
-            <div class="col-9 col-xl-4 mb-25">
+            <div class="col-12 col-md-8 col-xl-4 mb-25">
                 <div class="cards bg-darker g-grad-light pos-rel mx-auto pt-25 pt-xl-35">
                     <div class="plan-it-name caption-2 text-primary mb-20 mb-xl-30">SIGN UP</div>
                     <form class="px-20 px-md-30 px-xl-50" method="post" action="#" id="login">
-                        <input class="input input-text input-theme bg-white placeholder-color text-size-4 mb-15 mb-xl-20" id="sign-mail" type="text" placeholder="Email">
-                        <input class="input input-text input-theme bg-white placeholder-color text-size-4 mb-15 mb-xl-20" id="password" type="text" placeholder="Password">
-                        <input class="input input-text input-theme bg-white placeholder-color text-size-4 mb-15 mb-xl-20" id="repassword" type="text" placeholder="Confirm Password">
+                        <input class="input input-text input-theme bg-white placeholder-color text-size-4 mb-15 mb-xl-20 pl-15" id="sign-mail" type="text" placeholder="Email">
+                        <input class="input input-text input-theme bg-white placeholder-color text-size-4 mb-15 mb-xl-20 pl-15" id="password" type="text" placeholder="Password">
+                        <input class="input input-text input-theme bg-white placeholder-color text-size-4 mb-15 mb-xl-20 pl-15" id="repassword" type="text" placeholder="Confirm Password">
                         <div class="ha text-size-1 underline mb-15 mb-md-20 "><a href="#" class="link-text-primary">Already Have an account?</a>
                         </div>
                         <div class="lables_passreg_text">
@@ -554,9 +556,10 @@ document.write("<script async src='/browser-sync/browser-sync-client.js?v=2.26.7
                             </div>
                             <div class="content-item">
                                 <label class="label h5" for="mail-form">Email:</label>
-                                <input class="input input-text bg-white input-theme placeholder-color text-size-4" id="mail-form" type="text" placeholder="letha.terry@ya">
+                                <input class="input input-text bg-white input-theme placeholder-color text-size-4 text-truncate" id="mail-form" type="text" placeholder="letha.terry@ya">
                             </div>
-                            <label class="label h5 clearfix" for="message-form">Message:</label>
+<!--                            <label class="label h5" for="message-form">Message:</label>-->
+                            <div class="label">Message</div>
                             <textarea class="input input-textarea bg-white input-theme mb-15 mb-xl-25" id="message-form"></textarea>
                             <a href="#" class="my-btn main-btn-size btn-center bg-primary text-darker btn-price-text-size ">FIND MORE</a>
                         </form>
@@ -647,11 +650,12 @@ document.write("<script async src='/browser-sync/browser-sync-client.js?v=2.26.7
 <div class="d-n map bg-map ">
     <div class="container h-480 pos-rel">
         <div class="container h-480 pos-rel">
-            <div class="map-address pos-rel caption-4">
+        <div class="map-address pos-rel xy-center">
+            <div class="bold text-size-map">
                 2300 W Arbutus Dr<br>
                 <span class="text-size-3">Cit Spr, FL 34434, USA</span>
-
             </div>
+        </div>
         </div>
     </div>
 
@@ -676,7 +680,7 @@ document.write("<script async src='/browser-sync/browser-sync-client.js?v=2.26.7
                 </div>
                 <div class="col-sm-8 col-md-3">
                     <div class="caption-3 text-white" >FOLLOW US</div>
-                    <div class="d-flex pt-md-20 pt-xl-25">
+                    <div class="d-flex pt-20 pt-xl-30">
                         <div class="soc-icon text-dark z-i-1">
                             <a href="#" class="link-text-dark">
                                 <svg>
@@ -725,8 +729,8 @@ document.write("<script async src='/browser-sync/browser-sync-client.js?v=2.26.7
                 </div>
             </div>
         </div>
-        <div class="up pos-abs position-up xy-center">
-            <div class="go-to-top">
+        <div class="up pos-fix position-up xy-center">
+            <div class="go-to-topp">
                 <a href="#" class="link-text-dark text-dark">
                     <svg width="14" height="8">
                         <use xlink:href="#icon-go-to-top"/>

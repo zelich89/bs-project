@@ -53,6 +53,10 @@ a {
   @extend .position-absolute;
 }
 
+.pos-fix {
+  position: fixed;
+}
+
 .logo {
   font: bold 36px/44px Montserrat;
   letter-spacing: 2px;
@@ -340,13 +344,35 @@ a {
 }
 
 .position-up {
-  bottom: 10%;
-  right: 0;
+  bottom: 3%;
+  right: 5%;
   transform: translateX(-50%);
+  @include media-breakpoint-up(md) {
+    right: 15%;
+
+
+  }
 }
 
 .w-md-auto {
   @include media-breakpoint-up(md) {
     width: auto !important;
+  }
+}
+
+.burger {
+  &-container {
+    display: inline-block;
+    background-color: #fff;
+  }
+ &-bar {
+    display: block;
+    height: 2px;
+    width: 16px;
+    background: #fff;
+    margin: 4px auto;
+  }
+  &-half {
+    transform: translateX(25%) scaleX(.5);
   }
 }

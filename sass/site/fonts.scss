@@ -2,7 +2,7 @@
 .h1 {
   font: bold 32px/48px Montserrat;
   @include media-breakpoint-up(md) {
-    font: bold 36px/54px Montserrat;
+    font: bold 32px/54px Montserrat;
   }
   @include media-breakpoint-up(xl) {
     font: bold 64px/96px Montserrat;
@@ -10,7 +10,8 @@
 }
 
 .h2 {
-  font: bold 32px/48px Montserrat;
+  font: bold 20px/20px Montserrat;
+  white-space: nowrap;
   @include media-breakpoint-up(md) {
     font: bold 36px/50px Montserrat;
   }
@@ -21,6 +22,7 @@
 
 .h3 {
   font: bold 16px/24px Montserrat;
+  white-space: nowrap;
   @include media-breakpoint-up(md) {
     font: bold 24px/36px Montserrat;
   }
@@ -31,6 +33,7 @@
 
 .h4 {
   font: bold 16px/21px Montserrat;
+  white-space: nowrap;
   @include media-breakpoint-up(md) {
     font: bold 16px/21px Montserrat;
   }
@@ -41,6 +44,7 @@
 
 .h5 {
   font: 16px/21px Montserrat;
+  white-space: nowrap;
 }
 
 .caption-1 {
@@ -129,12 +133,20 @@
   font: 14px/16px "Source Sans Pro";
 }
 
+.text-size-map {
+  font: 14px/14px "Source Sans Pro";
+}
+
 .bold {
   font-weight: bold;
 }
 
 .italic {
   font-style: italic;
+}
+
+.text-nowrap {
+  white-space: nowrap;
 }
 
 .btn-price-text-size {

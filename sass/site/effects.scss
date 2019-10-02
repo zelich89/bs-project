@@ -24,6 +24,7 @@
 .cards-up {
   &:hover {
     transform: translateY(-10px);
+    transition: transform .3s ease;
   }
 }
 
