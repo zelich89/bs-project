@@ -10,6 +10,10 @@
   height: 120px;
 }
 
+.h-700 {
+  height: 700px;
+}
+
 .h-480 {
   //G questin
   height: 480px;
@@ -175,7 +179,6 @@ a {
     }
   }
 }
-
 .main-btn-size {
   padding: 10px 25px;
   z-index: 2;
@@ -186,6 +189,14 @@ a {
     padding: 15px 40px;
   }
 }
+
+.input-size {
+  padding: 10px 15px;
+  @include media-breakpoint-up(xl) {
+    padding: 15px 20px;
+  }
+}
+
 
 .cursor-pointer {
   cursor: pointer;
