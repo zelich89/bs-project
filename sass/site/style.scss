@@ -1,6 +1,5 @@
 .z-col {
   background-color: $success;
-;
 }
 
 .h-10 {
@@ -387,4 +386,28 @@ a {
   &-half {
     transform: translateX(25%) scaleX(.5);
   }
+}
+
+
+.grad{
+  position: relative;
+  > *{
+    position: relative;
+    z-index: 1;
+  }
+
+  &:after{
+    content: " ";
+    display: block;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to bottom,  rgba(0,0,0,0.48) 37%,rgba(0,0,0,0.59) 50%,rgba(0,0,0,1) 100%);
+    opacity: .1;
+  }
+
+
 }
