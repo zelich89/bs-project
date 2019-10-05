@@ -313,6 +313,12 @@ a {
   outline: none;
 }
 
+.input-border {
+  @include media-breakpoint-up(xl) {
+    border: $form-border-width*2 solid #e6e6e6;
+  }
+}
+
 .input-text {
   height: $form-height;
   padding: ($form-height - $form-line-height - ($form-border-width *2))/2 11px;
@@ -332,6 +338,10 @@ a {
 .content-item {
   width: 50%;
   float: left;
+}
+
+.form-div-group  .form-group {
+  margin-bottom: 0;
 }
 
 .form-group .content-item {

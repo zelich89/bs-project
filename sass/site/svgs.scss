@@ -46,16 +46,16 @@
 
 
 .soc-icon {
-  width: $soc-icon-sm*2;
-  height: $soc-icon-sm*2;
+  width: $soc-icon-sm;
+  height: $soc-icon-sm;
   svg {
     width: $soc-icon-sm;
     height: $soc-icon-sm;
   }
 
   @include media-breakpoint-up(xl) {
-    width: $soc-icon-xl*2;
-    height: $soc-icon-xl*2;
+    width: $soc-icon-xl;
+    height: $soc-icon-xl;
     svg {
       width: $soc-icon-xl;
       height: $soc-icon-xl;
