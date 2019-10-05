@@ -225,7 +225,8 @@
     <div class="container">
         <nav id="my-navber" class="navbar navbar-expand-lg ">
             <a class="navbar-brand logo link-text-primary" href="#">ZOFMANN</a>
-            <div class="burger d-lg-none">
+            <div data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                 aria-expanded="false" aria-label="Toggle navigation" class="burger d-lg-none">
                 <div class="burger-bar"></div>
                 <div class="burger-bar"></div>
                 <div class="burger-bar burger-half"></div>
@@ -242,7 +243,8 @@
                         <a class="nav-link link-text-lighter py-10" href="#">ABOUT</a>
                     </li>
                 </ul>
-                <button class="my-btn my-btn-outline my-btn-border border-inheri caption-2 text-lighter" type="submit">
+                <button class="d-none d-lg-inline-block my-btn my-btn-outline my-btn-border border-inheri caption-2 text-lighter"
+                        type="submit">
                     TAKE A TOUR
                 </button>
             </div>
@@ -264,11 +266,11 @@
 
 <!--    2  -->
 
-<section class="d-n main bg-pics">
+<section class="d-n main bg-pics grad-middle-">
     <div class="container pt-70 pb-100 pt-md-135 pb-md-150 pt-xl-250 pb-xl-200">
         <div class="row x-center">
             <div class="col-10 col-md-6 x-center">
-                <div class="h2 text-darker text-center text-nowrap-xl">Choosing The Right Boutique Hotel For You</div>
+                <div class="h2 text-darker text-center text-nowrap-xl">Choosing The Right Boutique Hotel For Youu</div>
             </div>
         </div>
         <div class="row x-center">
@@ -279,10 +281,11 @@
         <div class="row x-center">
             <div class="col-xl-6">
                 <form class="form-inline x-center mb-40 mb-md-50 mb-xl-60">
-                    <input class="input-size input-theme bg-transparent w-100 w-md-auto" type="search"
+                    <input class="input-size main-input-theme bg-transparent w-100 w-md-auto" type="text"
                            placeholder="Search" aria-label="Search">
                     <button class="my-btn main-btn-size btn-outline my-btn-border text-darker w-100 w-md-auto mt-15 ml-0 mt-md-0 ml-md-10 ml-xl-20"
-                            type="submit">FIND NOW
+                            type="submit">
+                        FIND NOW
                     </button>
                 </form>
             </div>
@@ -357,7 +360,7 @@
         <h2 class="h2 text-nowrap text-lighter pt-45 pt-md-50 pt-xl-55`">Choose Your Plan</h2>
         <div class="plans-sect row flex-md-row justify-content-around pt-30 pb-40 pt-md-35 pb-md-70 pt-xl-50 pb-xl-100">
             <div class="col-11 col-md-6 col-xl-4 mb-25">
-                <div class="cards cards-up cards-1 bg-darker bg-grad-light text-white pos-rel pt-30 px-35 pt-xl-40 px-xl-50">
+                <div class="cards cards-up cards-1 bg-darker grad-light-45 text-white pos-rel py-30 px-35 py-xl-40 px-xl-50">
                     <div class="cards-name caption-2 text-primary pos-rel z-i-1 mb-20 mb-xl-30">SILVER</div>
                     <div class="prises x-center pos-rel z-i-1 mb-5 mb-md-10 mb-xl-15">
                         <div class="h5">$</div>
@@ -368,11 +371,11 @@
                         Discspace<br>50 Uploads per day
                     </div>
                     <a href="#"
-                       class="my-btn main-btn-size bg-primary text-darker btn-price-text-size pos-rel z-i-1 mb-30 mb-xl-35">PURCHASE</a>
+                       class="my-btn main-btn-size bg-primary text-darker btn-price-text-size pos-rel z-i-1">PURCHASE</a>
                 </div>
             </div>
             <div class="col-11 col-md-6 col-xl-4 mb-25">
-                <div class="cards cards-up cards-1 bg-primary pt-30 px-35 pt-xl-40 px-xl-50">
+                <div class="cards cards-up cards-1 bg-primary py-30 px-35 py-xl-40 px-xl-50">
                     <div class="cards-name caption-2 pos-rel z-i-1 mb-20 mb-xl-30">GOLD</div>
                     <div class="prises x-center pos-rel z-i-1 mb-5 mb-md-10 mb-xl-15">
                         <div class="h5">$</div>
@@ -383,11 +386,11 @@
                         Discspace<br>Unlimited Uploads per day
                     </div>
                     <a href="#"
-                       class="my-btn main-btn-size bg-darker text-lighter btn-price-text-size pos-rel z-i-1 mb-30 mb-xl-35">PURCHAS!</a>
+                       class="my-btn main-btn-size bg-darker text-lighter btn-price-text-size pos-rel z-i-1">PURCHAS!</a>
                 </div>
             </div>
             <div class="col-11 col-md-6 col-xl-4 mb-25">
-                <div class="cards cards-up cards-1 bg-darker bg-grad-dark text-white pos-rel pt-30 px-30 pt-xl-40 px-xl-50">
+                <div class="cards cards-up cards-1 bg-darker grad-dark-45 text-white pos-rel py-30 px-30 py-xl-40 px-xl-50">
                     <div class="cards-name caption-2 text-primary pos-rel z-i-1 mb-20 mb-xl-30">PLATINUM</div>
                     <div class="prises x-center pos-rel z-i-1 mb-5 mb-md-10 mb-xl-15">
                         <div class="h5">$</div>
@@ -398,7 +401,7 @@
                         Discspace<br>Unlimited Uploads per day
                     </div>
                     <a href="#"
-                       class="my-btn main-btn-size bg-primary text-darker btn-price-text-size pos-rel z-i-1 mb-30 mb-xl-35">PURCHASE</a>
+                       class="my-btn main-btn-size bg-primary text-darker btn-price-text-size pos-rel z-i-1">PURCHASE</a>
                 </div>
             </div>
         </div>
@@ -407,7 +410,100 @@
 
 
 <!--    5  -->
-<section class="d-n user">
+<div class="bd-example container py-40 py-md-65 py-xl-100">
+    <div id="carouselExampleCaptions" class="carousel slide row justify-content-around flex-wrap" data-ride="carousel">
+
+        <a class="col-1 left xy-center d-none d-xl-flex" href="#carouselExampleCaptions" role="button"
+           data-slide="prev">
+            <div aria-hidden="true"
+                 class="direction-icon rounded-circle border xy-center flex-shrink-0 mx-10 mx-md-35 mx-xl-30">
+                <svg>
+                    <use xlink:href="#icon-prev"/>
+                </svg>
+            </div>
+        </a>
+        <div class="carousel-inner col-10 col-md-8 col-xl-6 text-center">
+            <div class="carousel-item active">
+                <img src="https://i.imgur.com/fBS39wm.png" class="round-gold-circle mb-10 mb-md-15 mb-xl-30" alt="...">
+                <div class="carousel-text">
+                    <h5 class="user-name h4 mb-20 mb-md-25 mb-xl-50">Ida Stephens — Noir Project</h5>
+                    <p class="text-size-1 mb-20 mb-xl-50">“Conversations can be a tricky business. Sometimes, decoding
+                        what is said with what is meant is difficult at best. However, communication is a necessary tool
+                        in
+                        todays world. It’s often been the case were one party completely miscommunicates to another due
+                        to a
+                        misunderstanding between parties.”</p>
+                </div>
+            </div>
+            <div class="carousel-item ">
+                <img src="https://i.imgur.com/fBS39wm.png" class="round-gold-circle mb-10 mb-md-15 mb-xl-30" alt="...">
+                <div class="carousel-text">
+                    <h5 class="user-name h4 mb-20 mb-md-25 mb-xl-50">Ida Stephens — Noir Project</h5>
+                    <p class="text-size-1 mb-20 mb-xl-50">“Conversations can be a tricky business. Sometimes, decoding
+                        what is said with what is meant is difficult at best. However, communication is a necessary tool
+                        in
+                        todays world. It’s often been the case were one party completely miscommunicates to another due
+                        to a
+                        misunderstanding between parties.”</p>
+                </div>
+            </div>
+            <div class="carousel-item ">
+                <img src="https://i.imgur.com/fBS39wm.png" class="round-gold-circle mb-10 mb-md-15 mb-xl-30" alt="...">
+                <div class="carousel-text">
+                    <h5 class="user-name h4 mb-20 mb-md-25 mb-xl-50">Ida Stephens — Noir Project</h5>
+                    <p class="text-size-1 mb-20 mb-xl-50">“Conversations can be a tricky business. Sometimes, decoding
+                        what is said with what is meant is difficult at best. However, communication is a necessary tool
+                        in
+                        todays world. It’s often been the case were one party completely miscommunicates to another due
+                        to a
+                        misunderstanding between parties.”</p>
+                </div>
+            </div>
+            <div class="carousel-item ">
+                <img src="https://i.imgur.com/fBS39wm.png" class="round-gold-circle mb-10 mb-md-15 mb-xl-30" alt="...">
+                <div class="carousel-text">
+                    <h5 class="user-name h4 mb-20 mb-md-25 mb-xl-50">Ida Stephens — Noir Project</h5>
+                    <p class="text-size-1 mb-20 mb-xl-50">“Conversations can be a tricky business. Sometimes, decoding
+                        what is said with what is meant is difficult at best. However, communication is a necessary tool
+                        in
+                        todays world. It’s often been the case were one party completely miscommunicates to another due
+                        to a
+                        misunderstanding between parties.”</p>
+                </div>
+            </div>
+            <div class="carousel-item ">
+                <img src="https://i.imgur.com/fBS39wm.png" class="round-gold-circle mb-10 mb-md-15 mb-xl-30" alt="...">
+                <div class="">
+                    <h5 class="user-name h4 mb-20 mb-md-25 mb-xl-50">Ida Stephens — Noir Project</h5>
+                    <p class="text-size-1 mb-20 mb-xl-50">“Conversations can be a tricky business. Sometimes, decoding
+                        what is said with what is meant is difficult at best. However, communication is a necessary tool
+                        in
+                        todays world. It’s often been the case were one party completely miscommunicates to another due
+                        to a
+                        misunderstanding between parties.”</p>
+                </div>
+            </div>
+        </div>
+        <a class="col-1 right xy-center d-none d-xl-flex" href="#carouselExampleCaptions" role="button"
+           data-slide="next">
+            <div aria-hidden="true"
+                 class="direction-icon rounded-circle border xy-center flex-shrink-0 mx-10 mx-md-35 mx-xl-30">
+                <svg>
+                    <use xlink:href="#icon-next"/>
+                </svg>
+            </div>
+        </a>
+        <div class="carousel-indicators dots w-100 position-static">
+            <div data-target="#carouselExampleCaptions" data-slide-to="0" class="dot"></div>
+            <div data-target="#carouselExampleCaptions" data-slide-to="1" class="dot"></div>
+            <div data-target="#carouselExampleCaptions" data-slide-to="3" class="dot active"></div>
+            <div data-target="#carouselExampleCaptions" data-slide-to="4" class="dot"></div>
+            <div data-target="#carouselExampleCaptions" data-slide-to="5" class="dot"></div>
+        </div>
+    </div>
+</div>
+
+<section class="dn user">
     <div class="container pt-40 pt-md-65 pt-xl-100">
         <div class="row justify-content-around ">
             <div class="col-1 left xy-center d-none d-xl-flex">
@@ -461,7 +557,7 @@
 
         <div class="plans-sect row flex-md-row justify-content-around pt-30 pb-40 pt-md-35 pb-md-70 pt-xl-50 pb-xl-100">
             <div class="col-10 col-md-6 col-xl-4 mb-25">
-                <div class="cards cards-up cards-1 bg-s bg-grad-dark text-white pos-rel pt-30 px-35 pt-xl-40 px-xl-60">
+                <div class="cards cards-up cards-1 bg-s grad-dark-45 text-white pos-rel py-30 px-35 py-xl-40 px-xl-60">
                     <div class="cards-name caption-2 text-primary pos-rel z-i-1">SECURE</div>
                     <div class="adv-icon marg-cent xy-center text-primary z-i-1">
                         <svg>
@@ -473,12 +569,12 @@
                         your sophistication as an amateur astronomer…
                     </div>
                     <a href="#"
-                       class="my-btn main-btn-size bg-primary text-darker btn-price-text-size pos-rel z-i-1 mb-30 mb-xl-35">FIND
+                       class="my-btn main-btn-size bg-primary text-darker btn-price-text-size pos-rel z-i-1">FIND
                         MORE</a>
                 </div>
             </div>
             <div class="col-10 col-md-6 col-xl-4 mb-25">
-                <div class="cards cards-up cards-1 bg-darker bg-grad-dark text-white pos-rel pt-30 px-35 pt-xl-40 px-xl-60">
+                <div class="cards cards-up cards-1 bg-darker grad-dark-45 text-white pos-rel py-30 px-35 py-xl-40 px-xl-60">
                     <div class="cards-name caption-2 text-primary pos-rel z-i-1">AESTHETIC</div>
                     <div class="adv-icon marg-cent xy-center text-primary z-i-1">
                         <svg>
@@ -490,12 +586,12 @@
                         famous story, or at least had it related to you.
                     </div>
                     <a href="#"
-                       class="my-btn main-btn-size bg-primary text-darker btn-price-text-size pos-rel z-i-1 mb-30 mb-xl-35">FIND
+                       class="my-btn main-btn-size bg-primary text-darker btn-price-text-size pos-rel z-i-1">FIND
                         MORE</a>
                 </div>
             </div>
             <div class="col-10 col-md-6 col-xl-4 mb-25">
-                <div class="cards cards-up cards-1 bg-darker bg-grad-dark text-white pos-rel pt-30 px-35 pt-xl-40 px-xl-60">
+                <div class="cards cards-up cards-1 bg-darker grad-dark-45 text-white pos-rel py-30 px-35 py-xl-40 px-xl-60">
                     <div class="cards-name caption-2 text-primary pos-rel z-i-1">NEAT</div>
                     <div class="adv-icon marg-cent xy-center text-primary z-i-1">
                         <svg>
@@ -507,7 +603,7 @@
                         provide a quick pick-me-up.
                     </div>
                     <a href="#"
-                       class="my-btn main-btn-size bg-primary text-darker btn-price-text-size pos-rel z-i-1 mb-30 mb-xl-35">FIND
+                       class="my-btn main-btn-size bg-primary text-darker btn-price-text-size pos-rel z-i-1">FIND
                         MORE</a>
                 </div>
             </div>
@@ -516,7 +612,169 @@
 </section>
 
 <!--    7  -->
-<section class="d-n places">
+<section class="places-new">
+    <div class="container mt-35 mb-40 mt-md-40 mb-md-50 mt-xl-65 mb-xl-60">
+        <div class="h2 text-nowrap text-center">Places 2</div>
+        <nav class="x-center">
+            <div class="nav nav-tabs caption-5" id="nav-tab" role="tablist">
+                <a class="nav-item nav-link place-item active link-text-dark" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">
+                    SAN FRANCISCO
+                </a>
+                <a class="nav-item nav-link place-item link-text-dark" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">
+                    SOUTH LILIANA
+                </a>
+                <a class="nav-item nav-link place-item link-text-dark" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">
+                    blickview
+                </a>
+                <a class="nav-item nav-link place-item link-text-dark" id="nav-place-tab" data-toggle="tab" href="#nav-place" role="tab" aria-controls="nav-contact" aria-selected="false">
+                    NEW RAVEN
+                </a>
+            </div>
+        </nav>
+        <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                <div class="row px-md-70 px-xl-65">
+                    <div class="col-6 col-md-4 mb-20 mb-xl-30">
+                        <div class="places-img">
+                            <img class="img-fluid" src="https://i.imgur.com/8Ov1b2n.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 mb-20 mb-xl-30">
+                        <div class="places-img">
+                            <img class="img-fluid" src=https://i.imgur.com/VBYjfbL.png"" alt="">
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 mb-20 mb-xl-30">
+                        <div class="places-img">
+                            <img class="img-fluid" src=https://i.imgur.com/94JpVef.png"" alt="">
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 mb-20 mb-xl-30">
+                        <div class="places-img">
+                            <img class="img-fluid" src="https://i.imgur.com/2fC3MKu.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 mb-20 mb-xl-30">
+                        <div class="places-img">
+                            <img class="img-fluid" src="https://i.imgur.com/IcJxFe8.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 mb-20 mb-xl-30">
+                        <div class="places-img">
+                            <img class="img-fluid" src="https://i.imgur.com/ipNEHW3.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                <div class="row px-md-70 px-xl-65">
+                    <div class="col-6 col-md-4 mb-20 mb-xl-30">
+                        <div class="places-img">
+                            <img class="img-fluid" src="https://i.imgur.com/8Ov1b2n.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 mb-20 mb-xl-30">
+                        <div class="places-img">
+                            <img class="img-fluid" src=https://i.imgur.com/94JpVef.png"" alt="">
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 mb-20 mb-xl-30">
+                        <div class="places-img">
+                            <img class="img-fluid" src=https://i.imgur.com/VBYjfbL.png"" alt="">
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 mb-20 mb-xl-30">
+                        <div class="places-img">
+                            <img class="img-fluid" src="https://i.imgur.com/2fC3MKu.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 mb-20 mb-xl-30">
+                        <div class="places-img">
+                            <img class="img-fluid" src="https://i.imgur.com/IcJxFe8.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 mb-20 mb-xl-30">
+                        <div class="places-img">
+                            <img class="img-fluid" src="https://i.imgur.com/ipNEHW3.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                <div class="row px-md-70 px-xl-65">
+                    <div class="col-6 col-md-4 mb-20 mb-xl-30">
+                        <div class="places-img">
+                            <img class="img-fluid" src=https://i.imgur.com/94JpVef.png"" alt="">
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 mb-20 mb-xl-30">
+                        <div class="places-img">
+                            <img class="img-fluid" src=https://i.imgur.com/VBYjfbL.png"" alt="">
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 mb-20 mb-xl-30">
+                        <div class="places-img">
+                            <img class="img-fluid" src="https://i.imgur.com/8Ov1b2n.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 mb-20 mb-xl-30">
+                        <div class="places-img">
+                            <img class="img-fluid" src="https://i.imgur.com/2fC3MKu.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 mb-20 mb-xl-30">
+                        <div class="places-img">
+                            <img class="img-fluid" src="https://i.imgur.com/IcJxFe8.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 mb-20 mb-xl-30">
+                        <div class="places-img">
+                            <img class="img-fluid" src="https://i.imgur.com/ipNEHW3.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="nav-place" role="tabpanel" aria-labelledby="nav-place-tab">
+                <div class="row px-md-70 px-xl-65">
+                    <div class="col-6 col-md-4 mb-20 mb-xl-30">
+                        <div class="places-img">
+                            <img class="img-fluid" src="https://i.imgur.com/8Ov1b2n.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 mb-20 mb-xl-30">
+                        <div class="places-img">
+                            <img class="img-fluid" src=https://i.imgur.com/VBYjfbL.png"" alt="">
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 mb-20 mb-xl-30">
+                        <div class="places-img">
+                            <img class="img-fluid" src="https://i.imgur.com/2fC3MKu.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 mb-20 mb-xl-30">
+                        <div class="places-img">
+                            <img class="img-fluid" src=https://i.imgur.com/94JpVef.png"" alt="">
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 mb-20 mb-xl-30">
+                        <div class="places-img">
+                            <img class="img-fluid" src="https://i.imgur.com/IcJxFe8.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 mb-20 mb-xl-30">
+                        <div class="places-img">
+                            <img class="img-fluid" src="https://i.imgur.com/ipNEHW3.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<section class="dn places">
     <div class="container mt-35 mb-40 mt-md-40 mb-md-50 mt-xl-65 mb-xl-60">
         <div class="h2 text-nowrap text-center">Places</div>
         <nav class="places-name x-center text-darker">
@@ -586,9 +844,9 @@
         <h2 class="h2 text-nowrap text-lighter pt-45 pt-md-50 pt-xl-55">Create An Account</h2>
         <div class="create-sect row flex-md-row justify-content-around pt-30 pb-40 pt-md-35 pb-md-70 pt-xl-50 pb-xl-10">
             <div class="col-12 col-md-8 col-xl-4 mb-25">
-                <div class="cards bg-darker g-grad-light pos-rel mx-auto pt-25 pt-xl-35">
+                <div class="cards bg-darker grad-light-45 pos-rel mx-auto px-20 py-25 px-md-30 px-xl-50 py-xl-35">
                     <div class="plan-it-name caption-2 text-primary mb-20 mb-xl-30">SIGN UP</div>
-                    <form class="px-20 px-md-30 px-xl-50" method="post" action="#" id="login">
+                    <form class="" method="post" action="#" id="login">
                         <input class="input input-text input-theme bg-white placeholder-color text-size-4 mb-15 mb-xl-20 pl-15"
                                id="sign-mail" type="text" placeholder="Email">
                         <input class="input input-text input-theme bg-white placeholder-color text-size-4 mb-15 mb-xl-20 pl-15"
@@ -600,7 +858,7 @@
                         </div>
                         <div class="lables_passreg_text">
                             <a href="#"
-                               class="my-btn main-btn-size bg-primary text-darker btn-price-text-size mb-35 mb-md-25">SIGN
+                               class="my-btn main-btn-size bg-primary text-darker btn-price-text-size">SIGN
                                 UP</a>
                         </div>
                     </form>
@@ -643,20 +901,20 @@
 
                 <div class="col-9 col-md-3 order-2 order-xl-1 pt-45 pt-md-0">
                     <h4 class="get h4">Get In Touch</h4>
-                    <div class="address y-start mb-15 mb-xl-25">
+                    <div class="address y-center mb-15 mb-xl-25">
                         <svg width="20" height="30">
                             <use xlink:href="#icon-location"/>
                         </svg>
                         <div class="text-size-1 pl-10">2300 W Arbutus Dr Citrus Springs, FL 34434, USA</div>
                     </div>
-                    <div class="mail y-start mb-15 mb-xl-25">
+                    <div class="mail y-center mb-15 mb-xl-25">
                         <svg width="18" height="11">
                             <use xlink:href="#icon-mail"/>
                         </svg>
                         <div class="text-size-1 pl-10"><a href="mailto:contact@hofmannui.net" class="link-text-dark">contact@hofmannui.net</a>
                         </div>
                     </div>
-                    <div class="phone y-start mb-25">
+                    <div class="phone y-center mb-25">
                         <svg width="18" height="20">
                             <use xlink:href="#icon-phone"/>
                         </svg>
@@ -827,5 +1085,7 @@
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
         crossorigin="anonymous">
 </script>
+<script src="js/scroll.js"></script>
+<script src="js/bootstrap.bundle.js"></script>
 </body>
 </html>

@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
     $(window).scroll(function() {
-        if ($(this).scrollTop() > 100) {        // If page is scrolled more than 100px
+        if ($(this).scrollTop() > 300) {        // If page is scrolled more than 100px
             $('.scrollup').fadeIn();    // Fade in the arrow
         } else {
             $('.scrollup').fadeOut();   // Else fade out the arrow

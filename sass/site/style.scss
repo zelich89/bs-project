@@ -68,8 +68,10 @@ a {
 }
 
 #my-navber {
-  .nav-link {
-    padding: 0 24px;
+  @include media-breakpoint-up(xl) {
+    .nav-link {
+      padding: 0 24px;
+    }
   }
 }
 
@@ -205,15 +207,18 @@ a {
 
 .dot {
   margin: 8px;
-  width: 15px;
-  height: 15px;
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
   background-color: #fff;
   border: 2px solid $darker;
   cursor: pointer;
-
   &.active {
     background-color: $darker;
+  }
+  @include media-breakpoint-up(xl) {
+    width: 14px;
+    height: 14px;
   }
 }
 
@@ -319,6 +324,11 @@ a {
   border-radius: 4px;
 }
 
+.main-input-theme {
+  border: $form-border-width*2 solid #fff;
+  border-radius: 4px;
+}
+
 .content-item {
   width: 50%;
   float: left;
@@ -361,8 +371,6 @@ a {
   transform: translateX(-50%);
   @include media-breakpoint-up(md) {
     right: 15%;
-
-
   }
 }
 
@@ -387,4 +395,18 @@ a {
   &-half {
     transform: translateX(25%) scaleX(.5);
   }
+}
+
+.nav-link {
+  border: none;
+  &.active {
+    font-weight: bold;
+  }
+}
+
+.nav-tabs .nav-link {
+  border: none;
+}
+.nav-tabs {
+  border-bottom: none;
 }
