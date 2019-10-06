@@ -1,6 +1,6 @@
 .z-col {
   background-color: $success;
-;
+  height: 440px;
 }
 
 .h-10 {
@@ -15,9 +15,9 @@
   height: 700px;
 }
 
-.h-480 {
+.h-450 {
   //G questin
-  height: 480px;
+  height: 450px;
 }
 
 .br {
@@ -103,11 +103,16 @@ a {
 
 .media-img {
   width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
   @include media-breakpoint-up(md) {
     width: 62px;
+    height: 62px;
   }
   @include media-breakpoint-up(xl) {
     width: 80px;
+    height: 80px;
   }
 }
 
@@ -268,6 +273,10 @@ a {
   width: 133px;
 }
 
+.footer-up {
+  border-bottom: 1px solid $dark;
+}
+
 .footer-line {
   position: absolute;
   left: 15px;
@@ -328,6 +337,10 @@ a {
 .input-theme {
   border: $form-border-width solid #999999;
   border-radius: 4px;
+}
+
+.op-08 {
+  opacity: .8;
 }
 
 .main-input-theme {
