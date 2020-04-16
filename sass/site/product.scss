@@ -2,11 +2,20 @@
   background-color: #f2e5de;
   display: flex;
   &__image-wrapper {
+    position: relative;
     flex: 0 0 380px;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 90px 50px 20px 50px;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 15%;
+      right: 0;
+      border: 20px solid transparent;
+      border-right-color: white;
+    }
   }
   &__photo {
     width: 100%;
