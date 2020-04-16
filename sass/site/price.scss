@@ -1,0 +1,24 @@
+.price {
+
+  &__current {
+    display: block;
+    //margin-bottom: 10px;
+    font-size: 50px;
+    line-height: 70px;
+    color: #4493a0;
+  }
+  &__info {
+    display: flex;
+    align-items: center;
+  }
+  &__old {
+    text-decoration: line-through;
+    font-size: 15px;
+    margin-right: 10px;
+  }
+  &__discount {
+    color: #55a32a;
+    font-size: 14px;
+    font-weight: bold;
+  }
+}

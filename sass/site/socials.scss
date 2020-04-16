@@ -1,0 +1,30 @@
+.social {
+  display: flex;
+  &__item {
+    &:not(:last-child) {
+      margin-right: 10px;
+    }
+  }
+  &__link {
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 25px;
+    height: 25px;
+    background-color: #e3e3e3;
+    color: #000;
+    &--facebook {
+      background-color: #305891;
+      color: white;
+    }
+    &--twitter {
+      background-color: #2ca8d2;
+      color: white;
+    }
+    &--google {
+      background-color: #c72e0b;
+      color: white;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+.btn {
+  position: relative;
+  flex-shrink: 1;
+  height: 40px;
+  padding: 10px 30px;
+  line-height: 20px;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  &:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0);
+    transition: background-color .2s ease;
+  }
+  &:hover:after{
+    background-color: rgba(0,0,0,.05);
+  }
+  &--size-wide {
+    flex: 1;
+  }
+  &--text-uppercase {
+    text-transform: uppercase;
+  }
+  &--primary{
+    background-color: #55a32a;
+  }
+  &--attention {
+    background-color: #2d91a1;
+  }
+}
