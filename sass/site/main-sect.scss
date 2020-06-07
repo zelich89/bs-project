@@ -1,0 +1,9 @@
+.main-sect {
+
+  &__image {
+    width: 100%;
+    @media (max-width: $tablet) {
+      //max-width: 1200px;
+    }
+  }
+}
