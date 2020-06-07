@@ -21,6 +21,7 @@ a, a:hover, a:visited {
 
 body {
   font-family: 'Roboto', sans-serif;
+  min-width: 950px;
 }
 
 .dark {
@@ -45,9 +46,9 @@ body {
 .menu {
   &__list {
     display: flex;
-    @media (max-width: $tablet) {
+/*    @media (max-width: $tablet) {
       flex-direction: column;
-    }
+    }*/
   }
   &__content {
     position: relative;
@@ -55,7 +56,7 @@ body {
       margin-right: 38px;
       padding-right: 38px;
     }
-    @media (max-width: $tablet) {
+/*    @media (max-width: $tablet) {
       margin-right: 0 !important;
       //padding-right: 0;
       padding: 20px;
@@ -67,7 +68,7 @@ body {
       &:last-child {
         border-bottom-color: transparent;
       }
-    }
+    }*/
     &:hover {
       .sub-menu__list {
         display: block;
@@ -86,9 +87,9 @@ body {
       background: url("../images/icon-drop.svg");
       width: 6px;
       height: 6px;
-      @media (max-width: $tablet) {
+/*      @media (max-width: $tablet) {
         display: none;
-      }
+      }*/
     }
   }
   &__link {
@@ -152,9 +153,6 @@ body {
       width: 6px;
       height: 6px;
     }
-    &:first-child {
-      border-radius: 8px 8px 0 0;
-    }
     &:last-child {
       border-radius: 0 0 8px 8px;
     }
@@ -201,7 +199,7 @@ body {
       border-bottom-color: #131417;
     }
     &:first-child {
-      border-radius: 8px 8px 0 0 ;
+      border-radius: 8px 8px 0 0;
     }
     &:last-child {
       border-radius: 0 0 8px 8px;

@@ -6,7 +6,7 @@
     justify-content: space-between;
     padding: 17px 0;
     @media (max-width: $tablet) {
-      padding: 17px 22px;
+      //padding: 17px 22px;
     }
   }
   &__menu {
@@ -15,7 +15,7 @@
       padding-left: 0;
 
     }
-    @media (max-width: $tablet) {
+/*    @media (max-width: $tablet) {
       position: fixed;
       top: 80px;
       right: 0;
@@ -27,7 +27,7 @@
       transition: transform 2s ease;
       background-color: #131417;
       padding-left: 0;
-    }
+    }*/
   }
   &__phone {
     display: flex;
@@ -38,7 +38,7 @@
   &__pic {
     margin-right: 13px;
   }
-  &__burger {
+/*  &__burger {
     display: none;
     @media (max-width: $tablet) {
       display: block;
@@ -52,7 +52,7 @@
         margin-bottom: 4px;
       }
     }
-  }
+  }*/
   &--theme {
     background: #131417;
     box-shadow: 0 4px 4px rgba(19, 20, 23, 0.4);
