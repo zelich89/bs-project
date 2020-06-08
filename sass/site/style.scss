@@ -32,6 +32,7 @@ body {
   right: 0;
   background-color: rgba(0, 0, 0, 0.5);
   opacity: 0;
+  pointer-events: none;
   transition: opacity .5s ease;
   &.active {
     opacity: 1;
@@ -46,9 +47,9 @@ body {
 .menu {
   &__list {
     display: flex;
-/*    @media (max-width: $tablet) {
+    @media (max-width: $tablet) {
       flex-direction: column;
-    }*/
+    }
   }
   &__content {
     position: relative;
@@ -56,7 +57,7 @@ body {
       margin-right: 38px;
       padding-right: 38px;
     }
-/*    @media (max-width: $tablet) {
+    @media (max-width: $tablet) {
       margin-right: 0 !important;
       //padding-right: 0;
       padding: 20px;
@@ -68,7 +69,7 @@ body {
       &:last-child {
         border-bottom-color: transparent;
       }
-    }*/
+    }
     &:hover {
       .sub-menu__list {
         display: block;
@@ -87,9 +88,9 @@ body {
       background: url("../images/icon-drop.svg");
       width: 6px;
       height: 6px;
-/*      @media (max-width: $tablet) {
+      @media (max-width: $tablet) {
         display: none;
-      }*/
+      }
     }
   }
   &__link {
