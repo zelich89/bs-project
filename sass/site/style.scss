@@ -4,14 +4,15 @@
   grid-auto-rows: 100px;
   grid-gap: 20px;
   &__item {
-    background-color: #28314E;
-    border: 1px solid #212941;
-    border-radius: 5px;
+    border: 7px solid crimson;
     padding: 8px 15px;
-    color: #ffffff;
+    border-radius: 5px;
     font-size: 28px;
-    &:nth-child(odd) {
-      background-color: #475477;
-    }
+    /*    background-color: #28314E;
+        border: 1px solid #212941;
+        color: #ffffff;
+        &:nth-child(odd) {
+          background-color: #475477;
+        }*/
   }
 }
