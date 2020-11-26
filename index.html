@@ -6,26 +6,74 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap&subset=cyrillic" rel="stylesheet">
 
     <link rel="stylesheet" href="css/main.css">
-    <title>Document</title>
+    <title>Grid-Portfolio</title>
 </head>
 <body>
-    <div class="grid">
-        <div class="grid__item">col-1</div>
-        <div class="grid__item">col-2</div>
-        <div class="grid__item">col-3</div>
-        <div class="grid__item">col-4</div>
-        <div class="grid__item">col-5</div>
-        <div class="grid__item">col-6</div>
-        <div class="grid__item">col-7</div>
-        <div class="grid__item">col-8</div>
-        <div class="grid__item">col-9</div>
-        <div class="grid__item">col-10</div>
-        <div class="grid__item">col-11</div>
-        <div class="grid__item">col-12</div>
-    </div>
+    <section class="grid">
+        <h1 class="grid__title grid__title--indent">Portfolio</h1>
+        <div class="grid__items">
+            <div class="grid__item">
+                <div class="grid__image-wrapper">
+                    <img class="grid__image" src="images/pcard-1.png" alt="">
+                </div>
+            </div>
+            <div class="grid__item">
+                <div class="grid__image-wrapper">
+                    <img class="grid__image" src="images/pcard-2.png" alt="">
+                    <div class="grid__back">
+                        <div class="grid__description grid__description--left">
+                            <div class="grid__name grid__name--indent">
+                                Blue Mountains
+                            </div>
+                            <div class="grid__under grid__under--indent">
+                                17 Apr 2016
+                            </div>
+                            <div class="grid__rect grid__rect--indent"></div>
+                            <div class="grid__text grid__text--indent">Planning a vacation to Europe? No doubt you have certain expectations about your upcoming journey.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid__item">
+                <div class="grid__image-wrapper">
+                    <img class="grid__image" src="images/pcard-3.png" alt="">
+                </div>
+            </div>
+            <div class="grid__item">
+                <div class="grid__image-wrapper">
+                    <img class="grid__image" src="images/pcard-4.png" alt="">
+                </div>
+            </div>
+            <div class="grid__item">
+                <div class="grid__image-wrapper">
+                    <img class="grid__image" src="images/pcard-5.png" alt="">
+                </div>
+            </div>
+            <div class="grid__item">
+                <div class="grid__image-wrapper">
+                    <img class="grid__image grid__image--opacity" src="http://www.placehold.it/380" alt="" >
+                    <div class="grid__description">
+                        <div class="grid__name grid__name--indent">
+                            Blue Mountains
+                        </div>
+                        <div class="grid__under grid__under--indent">
+                            17 Apr 2016
+                        </div>
+                        <div class="grid__rect grid__rect--color-darker grid__rect--indent"></div>
+                        <div class="grid__text grid__text--indent">Planning a vacation to Europe? No doubt you have certain expectations about your upcoming journey.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid__item">
+                <div class="grid__image-wrapper">
+                    <img class="grid__image" src="images/pcard-6.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
 
 </body>
 </html>

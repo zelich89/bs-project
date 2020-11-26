@@ -1,0 +1,11 @@
+@mixin font ($font-weight, $font-size, $line-height) {
+  font: $font-weight #{$font-size}/#{$line-height} sans-serif;
+  //font-weight: $font-weight;
+  //font-size: $font-size;
+  //line-height: $line-height;
+}
+
+@mixin square-size ($ss) {
+  width: $ss;
+  height: $ss;
+}
